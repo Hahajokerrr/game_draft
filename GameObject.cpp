@@ -84,16 +84,14 @@ bool GameObject::Collide(SDL_Rect &x, SDL_Rect Tile[][25], int Mapping[][25])
 
 void GameObject::Update(SDL_Rect Tile[][25], int Mapping[][25])
 {
-
     xpos += xvel;
     collider.x = xpos;
 
-    if( ( xpos < 0 ) || ( xpos+ KING_WIDTH > LEVEL_WIDTH ) || Collide(collider, Tile, Mapping) )
+    if( ( xpos < 0 ) || ( xpos + KING_WIDTH > LEVEL_WIDTH ) || Collide(collider, Tile, Mapping) )
     {
         xpos -= xvel;
         collider.x = xpos;
     }
-
 
     destRect.x = xpos;
 

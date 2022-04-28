@@ -27,8 +27,8 @@ public:
     int Getyvel() { return yvel; }
 
 
-    static const int xspeed = 10;
-    static const int yspeed = 5;
+    static const int xspeed = 8;
+    static const int yspeed = 8;
 
     static const int KING_WIDTH = 30;
     static const int KING_HEIGHT = 32;
